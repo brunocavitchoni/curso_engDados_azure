@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "HttpServer",
 		"typeProperties": {
-			"url": "https://raw.githubsercontent.com/djpmsft/adf-ready-demo/master/moviesDB.csv",
+			"url": "https://raw.githubusercontent.com/cacaviana/DataFactory/main/moviesDB.csv",
 			"enableServerCertificateValidation": true,
 			"authenticationType": "Anonymous"
 		}
