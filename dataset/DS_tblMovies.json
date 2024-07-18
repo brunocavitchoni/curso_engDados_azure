@@ -1,0 +1,15 @@
+{
+	"name": "DS_tblMovies",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServerMovies",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "formBDED"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
