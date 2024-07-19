@@ -21,7 +21,11 @@
 						"referenceName": "MoviesDB",
 						"type": "DatasetReference"
 					},
-					"name": "MoviesDB"
+					"name": "MoviesDB",
+					"rejectedDataLinkedService": {
+						"referenceName": "AzureDataLakeStorage",
+						"type": "LinkedServiceReference"
+					}
 				}
 			],
 			"transformations": [
@@ -85,13 +89,11 @@
 				"          Rating as string,",
 				"          {Rotton Tomato} as string",
 				"     ),",
-				"     partitionFileNames:['MoviesDBFinal.csv'],",
 				"     umask: 0022,",
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true,",
-				"     partitionBy('hash', 1)) ~> MoviesDB"
+				"     skipDuplicateMapOutputs: true) ~> MoviesDB"
 			]
 		}
 	}
