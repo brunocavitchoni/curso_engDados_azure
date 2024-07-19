@@ -21,7 +21,7 @@
 						"referenceName": "MoviesDB",
 						"type": "DatasetReference"
 					},
-					"name": "MoviesDB",
+					"name": "MoviesDBFinal",
 					"rejectedDataLinkedService": {
 						"referenceName": "AzureDataLakeStorage",
 						"type": "LinkedServiceReference"
@@ -93,7 +93,7 @@
 				"     preCommands: [],",
 				"     postCommands: [],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> MoviesDB"
+				"     skipDuplicateMapOutputs: true) ~> MoviesDBFinal"
 			]
 		}
 	}
